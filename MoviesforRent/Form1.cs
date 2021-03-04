@@ -242,7 +242,7 @@ namespace MoviesforRent
 
         private void movdltbtn_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("DELETE FROM MOVTBL  WHERE MOVID=@mid", con);
+            SqlCommand cmd = new SqlCommand("DELETE FROM MOVTBL  WHERE MOVSId=@mid", con);
 
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@mid", movsidbx.Text);
@@ -261,7 +261,7 @@ namespace MoviesforRent
             if (movsidbx.Text != "")
 
             {
-SqlCommand cmd = new SqlCommand("UPDATE  MOVTBL SET MOVID= @mid, MOVNAME= @mname, MOVRAT= @mrat, MOVGEN= @mgen, MOVCPY= @mcpy, MOVPLT= @mplt, MOVRNT= @mrent, MOVRELSDT= @mrd WHERE MOVSID=@mid", con);
+SqlCommand cmd = new SqlCommand("UPDATE  MOVTBL SET MOVSId= @mid, MOVNAME= @mname, MOVRAT= @mrat, MOVGEN= @mgen, MOVCPY= @mcpy, MOVPLT= @mplt, MOVRNT= @mrent, MOVRELSDT= @mrd WHERE MOVSID=@mid", con);
 
 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@mid", movsidbx.Text);
@@ -329,10 +329,10 @@ SqlCommand cmd = new SqlCommand("INSERT INTO RNTBL VALUES(@rmid,@cstrridbx,@movr
 
         private void movrtrnbttn_Click(object sender, EventArgs e)
         {
-            if (rentmovidbx.Text != "")
+            if (IsValidR())
 
             {
-SqlCommand cmd = new SqlCommand("UPDATE  RNTBL SET RNTID= @rmid, CUSTID= @retdbox WHERE MOVSID=@rmid", con);
+SqlCommand cmd = new SqlCommand("UPDATE  RNTBL SET RNTId= @rmid, CUSTOId= @retdbox WHERE MOVSId=@rmid", con);
 
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@rmid", rentmovidbx.Text);                

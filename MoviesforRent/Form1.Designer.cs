@@ -41,8 +41,6 @@
             this.movrlsbx = new System.Windows.Forms.TextBox();
             this.movntrbx = new System.Windows.Forms.TextBox();
             this.movsidbx = new System.Windows.Forms.TextBox();
-            this.presentlyout = new System.Windows.Forms.RadioButton();
-            this.rntolmov = new System.Windows.Forms.RadioButton();
             this.dtrtrn = new System.Windows.Forms.Label();
             this.rntdtdtl = new System.Windows.Forms.Label();
             this.movdtlid = new System.Windows.Forms.Label();
@@ -83,7 +81,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.custmiddbx = new System.Windows.Forms.TextBox();
             this.rntmovtb = new System.Windows.Forms.TabControl();
-            this.upratmov = new System.Windows.Forms.RadioButton();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.custmgview)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -183,32 +180,6 @@
             this.movsidbx.Name = "movsidbx";
             this.movsidbx.Size = new System.Drawing.Size(100, 20);
             this.movsidbx.TabIndex = 146;
-            // 
-            // presentlyout
-            // 
-            this.presentlyout.AutoSize = true;
-            this.presentlyout.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.presentlyout.Location = new System.Drawing.Point(441, 240);
-            this.presentlyout.Name = "presentlyout";
-            this.presentlyout.Size = new System.Drawing.Size(88, 17);
-            this.presentlyout.TabIndex = 135;
-            this.presentlyout.TabStop = true;
-            this.presentlyout.Text = "Presently Out";
-            this.presentlyout.UseVisualStyleBackColor = true;
-            this.presentlyout.CheckedChanged += new System.EventHandler(this.presentlyout_CheckedChanged);
-            // 
-            // rntolmov
-            // 
-            this.rntolmov.AutoSize = true;
-            this.rntolmov.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.rntolmov.Location = new System.Drawing.Point(264, 240);
-            this.rntolmov.Name = "rntolmov";
-            this.rntolmov.Size = new System.Drawing.Size(120, 17);
-            this.rntolmov.TabIndex = 134;
-            this.rntolmov.TabStop = true;
-            this.rntolmov.Text = "Total Rental Movies";
-            this.rntolmov.UseVisualStyleBackColor = true;
-            this.rntolmov.CheckedChanged += new System.EventHandler(this.rntolmov_CheckedChanged);
             // 
             // dtrtrn
             // 
@@ -612,26 +583,12 @@
             this.rntmovtb.Size = new System.Drawing.Size(616, 216);
             this.rntmovtb.TabIndex = 100;
             // 
-            // upratmov
-            // 
-            this.upratmov.AutoSize = true;
-            this.upratmov.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.upratmov.Location = new System.Drawing.Point(586, 240);
-            this.upratmov.Name = "upratmov";
-            this.upratmov.Size = new System.Drawing.Size(113, 17);
-            this.upratmov.TabIndex = 149;
-            this.upratmov.TabStop = true;
-            this.upratmov.Text = "High Rating Movie";
-            this.upratmov.UseVisualStyleBackColor = true;
-            this.upratmov.CheckedChanged += new System.EventHandler(this.upratmov_CheckedChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(1068, 480);
-            this.Controls.Add(this.upratmov);
             this.Controls.Add(this.movrenbx);
             this.Controls.Add(this.rtrdbx);
             this.Controls.Add(this.rntdbx);
@@ -645,8 +602,6 @@
             this.Controls.Add(this.movrlsbx);
             this.Controls.Add(this.movntrbx);
             this.Controls.Add(this.movsidbx);
-            this.Controls.Add(this.presentlyout);
-            this.Controls.Add(this.rntolmov);
             this.Controls.Add(this.dtrtrn);
             this.Controls.Add(this.rntdtdtl);
             this.Controls.Add(this.movdtlid);
@@ -712,8 +667,6 @@
         private System.Windows.Forms.TextBox movrlsbx;
         private System.Windows.Forms.TextBox movntrbx;
         private System.Windows.Forms.TextBox movsidbx;
-        private System.Windows.Forms.RadioButton presentlyout;
-        private System.Windows.Forms.RadioButton rntolmov;
         private System.Windows.Forms.Label dtrtrn;
         private System.Windows.Forms.Label rntdtdtl;
         private System.Windows.Forms.Label movdtlid;
@@ -754,7 +707,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TabControl rntmovtb;
         private System.Windows.Forms.TextBox custmiddbx;
-        private System.Windows.Forms.RadioButton upratmov;
     }
 }
 
